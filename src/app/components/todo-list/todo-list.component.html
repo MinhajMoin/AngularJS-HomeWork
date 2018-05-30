@@ -1,0 +1,7 @@
+<div class="todo-list">
+  <div class="todo-list-item" *ngFor="let todoItem of list; let i = index">
+    <div class="text">
+      {{todoItem.text | limitTo : 15}} <button class="btn" (click)="removediv(index)">Done</button>
+    </div>
+  </div>
+</div>
